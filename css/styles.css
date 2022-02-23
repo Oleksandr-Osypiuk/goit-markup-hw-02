@@ -56,6 +56,10 @@ body {
   color: var(--brand-color);
 }
 
+.site-nav .link.current {
+  color: var(--brand-color);
+}
+
 .auth-nav .link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -88,7 +92,8 @@ body {
   background-color: #e5e5e5;
 }
 
-.button {
+.button-studio {
+  font-family: roboto, sans-serif;
   color: #ffffff;
   background-color: var(--brand-color);
   cursor: pointer;
@@ -100,12 +105,13 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button:hover,
-.button:focus {
+.button-studio:hover,
+.button-studio:focus {
   color: var(--brand-color);
 }
 
 .button-portfolio .button {
+  font-family: roboto, sans-serif;
   color: var(--main-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
