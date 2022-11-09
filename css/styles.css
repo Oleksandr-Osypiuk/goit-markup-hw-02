@@ -5,16 +5,28 @@
   --brand-color: #2196f3;
 }
 
-body {
-  color: var(--main-text-color);
-  background-color: #e5e5e5;
-
-  font-family: roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-
 .list {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  color: var(--main-text-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .navigation {
@@ -78,7 +90,7 @@ body {
   background-color: var(--main-bgr-color);
 }
 
-.hero-studio > h1 {
+.hero-title {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -110,7 +122,7 @@ body {
   color: var(--brand-color);
 }
 
-.button-portfolio .button {
+.button-portfolio-item {
   font-family: roboto, sans-serif;
   color: var(--main-text-color);
   background-color: #f5f4fa;
@@ -118,27 +130,29 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border: none;
 }
 
-.button-portfolio .button:hover,
-.button-portfolio .button:focus {
-  color: var(--brand-color);
+.button-portfolio-item:hover,
+.button-portfolio-item:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
-.features-list h3 {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
-.features-list p {
+.features-text {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
 
-.description > .description-title {
+.services-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -149,25 +163,25 @@ body {
   background-color: #f5f4fa;
 }
 
-.team > .team-title {
+.team-title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
 
-.team-list h3 {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 
-.team-list p {
+.team-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
 }
 
-.projects h2 {
+.projects-litle {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -175,7 +189,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.projects p {
+.projects-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.8;
