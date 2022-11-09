@@ -1,7 +1,8 @@
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
-  --main-bgr-color: #2f303a;
+  --main-bgr-color: #f5f5f5;
+  --secondary-bgr-color: #2f303a;
   --brand-color: #2196f3;
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 .hero-studio {
-  background-color: var(--main-bgr-color);
+  background-color: var(--secondary-bgr-color);
 }
 
 .hero-title {
@@ -101,13 +102,13 @@ body {
 }
 
 .hero-portfolio {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 
 .button-studio {
   font-family: roboto, sans-serif;
-  color: #ffffff;
-  background-color: var(--brand-color);
+  color: #FFFFFF
+  background-color: #f5f4fa;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -119,7 +120,8 @@ body {
 
 .button-studio:hover,
 .button-studio:focus {
-  color: var(--brand-color);
+  color: #ffffff;
+  background-color: var(--brand-color);
 }
 
 .button-portfolio-item {
@@ -136,7 +138,7 @@ body {
 .button-portfolio-item:hover,
 .button-portfolio-item:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--brand-color);
 }
 
 .features-title {
@@ -196,7 +198,7 @@ body {
 }
 
 .footer {
-  background-color: var(--main-bgr-color);
+  background-color: var(--secondary-bgr-color);
 }
 
 .footer-logo {
